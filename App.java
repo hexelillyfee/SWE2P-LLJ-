@@ -1,11 +1,9 @@
 public class App {
-
     public static void main(String[] args) {
+        Studierender linus = new Studierender("Linus-Paul-Jasper", "00175252", "UXD-B");
+        Dozierender nestler = new Dozierender("Prof. Dr. Simon Nester", "I", "B203");
 
-        Studierender linus = new Studierender ("Linus", 123456789, "UXD");
-        Dozierender nestler = new Dozierender("Nestler", "Info", 123);
-        
+        linus.frageStellen(nestler, "Wo ist ihr Büro?");
+        nestler.frageBeantworten(linus, "Raum B203");
     }
-
 }
-//Neuer Commit Vesuch 
