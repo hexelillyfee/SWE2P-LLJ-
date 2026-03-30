@@ -1,3 +1,5 @@
+//gemeinsam erarbeitet von Lilly Tischler, Joshua Merz und Lisa Müller
+
 public class Dozierender {
     private String name;
     private String fakultaet;

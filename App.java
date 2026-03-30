@@ -1,3 +1,5 @@
+//gemeinsam erarbeitet von Lilly Tischler, Joshua Merz und Lisa Müller
+
 public class App {
     public static void main(String[] args) {
         Studierender linus = new Studierender("Linus-Paul-Jasper", "00175252", "UXD-B");

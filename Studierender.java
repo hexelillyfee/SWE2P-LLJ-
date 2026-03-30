@@ -1,3 +1,5 @@
+//gemeinsam erarbeitet von Lilly Tischler, Joshua Merz und Lisa Müller
+
 public class Studierender {
     private String name;
     private String matrikelnummer;
@@ -16,5 +18,9 @@ public class Studierender {
 
     public void frageStellen(Dozierender dozent, String frage){
         System.out.println("Frage an " + dozent.getName() + ": " + frage);
+    }
+
+    public void sprechstundeAnfrage(){
+        
     }
 }
