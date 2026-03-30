@@ -20,7 +20,8 @@ public class Studierender {
         System.out.println("Frage an " + dozent.getName() + ": " + frage);
     }
 
-    public void sprechstundeAnfrage(){
-        
+    public void sprechstundeAnfrage(Dozierender dozent, int sprechstundeUhrzeit){
+        System.out.println("\nSprechstundenanfrage \nVon: " + this.name + "\nAn: " + dozent.getName() + "\nUm: " + sprechstundeUhrzeit + " Uhr");
+        dozent.sprechstundeAntwort(sprechstundeUhrzeit);
     }
 }
