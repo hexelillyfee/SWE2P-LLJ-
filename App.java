@@ -9,5 +9,7 @@ public class App {
         nestler.frageBeantworten(linus, "Raum B203");
 
         linus.sprechstundeAnfrage(nestler, 16);
+
+        linus.feedbackAbgeben(nestler, 8);
     }
 }
