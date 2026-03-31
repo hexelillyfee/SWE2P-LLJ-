@@ -2,17 +2,18 @@
 
 public class App {
     public static void main(String[] args) {
-        Studierender linus = new Studierender("Linus-Paul-Jasper", "00175252", "UXD-B");
-        Dozierender nestler = new Dozierender("Prof. Dr. Simon Nester", "I", "B203", 16);
+        Studierender moritz = new Studierender("Moritz", "00175252", "WINF-B");
+        Dozierender kroeninger = new Dozierender("Jutta Kröninger", "I", "B203", 16);
 
-        linus.frageStellen(nestler, "Wo ist ihr Büro?");
-        nestler.frageBeantworten(linus, "Raum B203");
 
-        linus.sprechstundeAnfrage(nestler, 16);
+        moritz.frageStellen(kroeninger, "Wo ist ihr Büro?");
+        kroeninger.frageBeantworten(moritz, "Raum B203");
 
-        linus.feedbackAbgeben(nestler, 8);
-        linus.feedbackAbgeben(nestler, 4);
-        linus.feedbackAbgeben(nestler, 7);
+        moritz.sprechstundeAnfrage(kroeninger, 16);
+
+        moritz.feedbackAbgeben(kroeninger, 9);
+        moritz.feedbackAbgeben(kroeninger, 4);
+        moritz.feedbackAbgeben(kroeninger, 7);
 
     }
 }
