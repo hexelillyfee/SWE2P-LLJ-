@@ -26,7 +26,7 @@ public class Studierender {
     }
 
     public void feedbackAbgeben(Dozierender dozent, int bewertung){
-        System.out.println("\nAbgegebene Bewertung: " + bewertung + "/10 \nAn: " + dozent.getName());
+        System.out.println("\nAbgegebene Bewertung: " + bewertung + "/10 \nVon: " + this.name + "\nAn: " + dozent.getName());
         dozent.feedbackBekommen(bewertung);
     }
 

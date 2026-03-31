@@ -17,9 +17,6 @@ public class Dozierender {
         for(int i = 0; i < this.feedback.length; i++){
             this.feedback[i] = -1;
         }
-        for(int i = 0; i < this.feedback.length; i++){
-            System.out.println(this.feedback[i]);
-        }
     }
 
     public String getName(){
@@ -27,7 +24,7 @@ public class Dozierender {
     }
 
     public void printFeedbackDurchschnitt(){
-        System.out.println("\nAktueller Durschnitt des Feedbacks \nVon: " + this.name + "\nDurschnitt: " + this.feedbackDurchschnitt);
+        System.out.println("\nAktueller Durschnitt der Bewertungen \nVon: " + this.name + "\nDurschnitt: " + this.feedbackDurchschnitt);
     }
 
     public void frageBeantworten(Studierender studierender, String antwort){
@@ -41,7 +38,7 @@ public class Dozierender {
             return;
         }
         else{
-            System.out.println("Sprechstunde angenommen.");
+            System.out.println("Sprechstunde angenommen. \nRaum: " + this.bueronummer);
         }
     }
 
