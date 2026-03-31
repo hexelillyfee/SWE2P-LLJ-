@@ -11,5 +11,8 @@ public class App {
         linus.sprechstundeAnfrage(nestler, 16);
 
         linus.feedbackAbgeben(nestler, 8);
+        linus.feedbackAbgeben(nestler, 4);
+        linus.feedbackAbgeben(nestler, 7);
+
     }
 }
