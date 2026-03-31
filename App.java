@@ -15,5 +15,7 @@ public class App {
         moritz.feedbackAbgeben(kroeninger, 4);
         moritz.feedbackAbgeben(kroeninger, 7);
 
+        kroeninger.printFeedbackDurchschnitt();
+
     }
 }

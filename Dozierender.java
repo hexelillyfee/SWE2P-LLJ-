@@ -26,6 +26,10 @@ public class Dozierender {
         return name;
     }
 
+    public void printFeedbackDurchschnitt(){
+        System.out.println("\nAktueller Durschnitt des Feedbacks \nVon: " + this.name + "\nDurschnitt: " + this.feedbackDurchschnitt);
+    }
+
     public void frageBeantworten(Studierender studierender, String antwort){
         System.out.println("Antwort an " + studierender.getName() + ": " + antwort);
     }
@@ -64,6 +68,5 @@ public class Dozierender {
             }
         }
         this.feedbackDurchschnitt = sum/count;
-        System.out.println("Durschnitt des Feedbacks: " + feedbackDurchschnitt);
     }
 }
