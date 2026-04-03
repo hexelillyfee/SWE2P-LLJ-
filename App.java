@@ -20,8 +20,11 @@ public class App {
         kroeninger.printFeedbackDurchschnitt();
 
         Lehrveranstaltung gestaltung = new Lehrveranstaltung("Gestaltung", kroeninger, 1);
-        gestaltung.addTeilnehmer(sophia);
-        gestaltung.addTeilnehmer(antonia);
+        gestaltung.signUpTeilnehmer(sophia);
+        gestaltung.signUpTeilnehmer(antonia);
+
+        gestaltung.removeTeilnehmer(sophia);
+        gestaltung.signUpTeilnehmer(antonia);
 
     }
 }

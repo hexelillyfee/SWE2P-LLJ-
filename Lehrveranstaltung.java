@@ -11,7 +11,7 @@ public class Lehrveranstaltung {
         this.teilnehmerliste = new Studierender[teilnehmeranzahl];
     }
 
-    public void addTeilnehmer(Studierender teilnehmer){
+    public void signUpTeilnehmer(Studierender teilnehmer){
         System.out.println("\nKursname: " + this.titel);
         for(int i = 0; i < this.teilnehmerliste.length; i++){
             if(teilnehmerliste[i] == null){
@@ -21,6 +21,16 @@ public class Lehrveranstaltung {
             }
         }
         System.out.println("Der Kurs ist bereits voll. Es können keine weiteren Teilnehmer hinzugefügt werden.");
+    }
+
+    public void removeTeilnehmer(Studierender teilnehmer){
+        System.out.println("\nKursname: " + this.titel);
+        for(int i = 0; i < this.teilnehmerliste.length; i++){
+            if(teilnehmerliste[i].getName().equals(teilnehmer.getName())){
+                teilnehmerliste[i] = null;
+                System.out.println("Entfernter Teilnehmer: " + teilnehmer.getName());
+            }
+        }
     }
 
 }
