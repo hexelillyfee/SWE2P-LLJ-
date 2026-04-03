@@ -1,5 +1,3 @@
-//gemeinsam erarbeitet von Lilly Tischler, Joshua Merz und Lisa Müller
-
 public class App {
     public static void main(String[] args) {
         //Erstellen von Studierenden

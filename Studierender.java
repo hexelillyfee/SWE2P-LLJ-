@@ -1,5 +1,3 @@
-//gemeinsam erarbeitet von Lilly Tischler, Joshua Merz und Lisa Müller
-
 public class Studierender {
     private String name;
     private String matrikelnummer;
