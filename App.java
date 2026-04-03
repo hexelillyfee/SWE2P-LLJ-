@@ -19,5 +19,9 @@ public class App {
 
         kroeninger.printFeedbackDurchschnitt();
 
+        Lehrveranstaltung gestaltung = new Lehrveranstaltung("Gestaltung", kroeninger, 1);
+        gestaltung.addTeilnehmer(sophia);
+        gestaltung.addTeilnehmer(antonia);
+
     }
 }
