@@ -5,8 +5,8 @@ public class Dozierender {
     private String fakultaet;
     private String bueronummer;
     private int sprechstundeUhrzeit;
-    int[] feedback = new int[20];
-    double feedbackDurchschnitt;
+    private int[] feedback = new int[20]; //Aktuell maximalanzahl für erhaltbares Feedback 20 (demonstrationszwecke)
+    private double feedbackDurchschnitt;
 
 
     public Dozierender(String name, String fakultaet, String bueronummer, int sprechstundeUhrzeit){
@@ -37,7 +37,7 @@ public class Dozierender {
             System.out.println("Anfrage außerhalb der Sprechstundenzeiten");
             return;
         }
-        else{
+        else{ //Es wird jede Sprechstunde angenommen, die innerhalb der Sprechstundenzeiten liegt (demonstrationszwecke)
             System.out.println("Sprechstunde angenommen. \nRaum: " + this.bueronummer);
         }
     }

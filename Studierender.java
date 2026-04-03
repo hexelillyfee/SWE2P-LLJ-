@@ -30,4 +30,12 @@ public class Studierender {
         dozent.feedbackBekommen(bewertung);
     }
 
+    public void lehrveranstaltungAnmeldung(Lehrveranstaltung kurs){
+        kurs.addTeilnehmer(this);
+    }
+
+    public void lehrveranstaltungAbmeldung(Lehrveranstaltung kurs){
+        kurs.removeTeilnehmer(this);
+    }
+
 }
