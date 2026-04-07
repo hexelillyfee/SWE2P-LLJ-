@@ -8,11 +8,33 @@ public  class Studierender {
         this.matrikelnummer = matrikelnummer;
         this.studiengang = studiengang;
     }
+  
+    
     public String getName() {
         return name;
     }
-    public void frageStellen(String frage, Dozenten dozent) {
-        System.out.println("Frage von " + this.name + " an " + dozent.getName() + ": " + frage);
+public void frageStellen(Dozierender dozent, String frage){
+        System.out.println("Frage an " + dozent.getName() + ": " + frage);
     }
-    
+
+    public void sprechstundeAnfrage(Dozierender dozent, int sprechstundeUhrzeit){
+        System.out.println("\nSprechstundenanfrage \nVon: " + this.name + "\nAn: " + dozent.getName() + "\nUm: " + sprechstundeUhrzeit + " Uhr");
+        dozent.sprechstundeAntwort(sprechstundeUhrzeit);
+    }
+
+    public void feedbackAbgeben(Dozierender dozent, int bewertung){
+        System.out.println("\nAbgegebene Bewertung: " + bewertung + "/10 \nVon: " + this.name + "\nAn: " + dozent.getName());
+        dozent.feedbackBekommen(bewertung);
+    }
+
+    public void lehrveranstaltungAnmeldung(Lehrveranstaltung kurs){
+        kurs.addTeilnehmer(this);
+    }
+
+    public void lehrveranstaltungAbmeldung(Lehrveranstaltung kurs){
+        kurs.removeTeilnehmer(this);
+    }
+
 }
+    
+
