@@ -61,7 +61,7 @@ public class Lehrveranstaltung {
         System.out.print("Teilnehmer: ");
         for(int i = 0; i < this.teilnehmerliste.length; i++){
             if(teilnehmerliste[i] != null){
-                System.out.print(this.teilnehmerliste[i].getName());
+                System.out.print(teilnehmerliste[i].getName() + ", ");
             }
         }
         System.out.println("\nVorlesungsstunden: ");
