@@ -2,6 +2,9 @@ public  class Dozierender  {
     private String name;
     private String fakultaet;
     private String bueronummer;
+    private int sprechstundeUhrzeit;
+    private int[] feedback = new int[20];
+    private double feedbackDurchschnitt;
 
      public Dozierender(String name, String fakultaet, String bueronummer, int sprechstundeUhrzeit){
         this.name = name;
