@@ -6,18 +6,18 @@ public class App {
     
         Dozierender bauer = new Dozierender("Prof. Bauer", "Informatik", "Büro 001", 10);
 
-    System.out.println("--Frage Stellen--------------------------------------\n---\n");
-        paul.frageStellen(bauer, "Sind Sie Fußballfan?");
+    System.out.println("- Frage Stellen -------------------------------------\n---\n");
+        paul.frageStellen(bauer, "Ist an Ostern Vorlesungsfrei?");
         bauer.frageBeantworten(anna, "Ja");
 
         max.frageStellen(bauer, "Was ist Prüfungsrelevant?");
         bauer.frageBeantworten(max, "Prüfungsrelevant sind alle Vorlesungen und Übungsblätter.");
 
-     System.out.println("\n---\n--Sprechstunden--------------------------------------\n---");
+     System.out.println("\n---\n- Sprechstunden -------------------------------------\n---");
         max.sprechstundeAnfrage(bauer, 10);
 
     //Abgabe von Feedback
-        System.out.println("\n---\n--Feedback-------------------------------------------\n---");
+        System.out.println("\n---\n- Feedback -------------------------------------------\n---");
         max.feedbackAbgeben(bauer, 9);
         paul.feedbackAbgeben(bauer, 5);
         anna.feedbackAbgeben(bauer, 7);
@@ -26,7 +26,7 @@ public class App {
         bauer.printFeedbackDurchschnitt();
 
         //erstellen einer lehrveranstaltung
-        System.out.println("\n---\n--Lehrveranstaltungen--------------------------------\n---");
+        System.out.println("\n---\n- Lehrveranstaltungen --------------------------------\n---");
         Lehrveranstaltung gestaltung = new Lehrveranstaltung("Gestaltung", bauer, 2); 
         
         anna.lehrveranstaltungAnmeldung(gestaltung);
